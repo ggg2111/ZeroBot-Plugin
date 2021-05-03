@@ -17,7 +17,7 @@ import (
 	_ "github.com/Yiwen-Chan/ZeroBot-Plugin/huahua" // 椛椛词库
 
 	// 实用类
-	_ "github.com/Yiwen-Chan/ZeroBot-Plugin/github"  // 搜索GitHub仓库
+	//_ "github.com/Yiwen-Chan/ZeroBot-Plugin/github"  // 搜索GitHub仓库
 	_ "github.com/Yiwen-Chan/ZeroBot-Plugin/manager" // 群管
 	_ "github.com/Yiwen-Chan/ZeroBot-Plugin/runcode" // 在线运行代码
 
@@ -47,7 +47,7 @@ func main() {
 	zero.Run(zero.Config{
 		NickName:      []string{"椛椛", "ATRI", "atri", "亚托莉", "アトリ"},
 		CommandPrefix: "/",
-		SuperUsers:    []string{"825111790", "213864964"}, // 必须修改，否则无权限
+		SuperUsers:    []string{"211159202","169854754"}, // 必须修改，否则无权限
 		Driver: []zero.Driver{
 			driver.NewWebSocketClient("127.0.0.1", "6700", ""),
 		},
